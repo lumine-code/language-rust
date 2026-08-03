@@ -7,6 +7,10 @@ Rust language support.
 - **Grammars**: provides Tree-sitter grammars built from [tree-sitter-rust](https://github.com/tree-sitter/tree-sitter-rust).
 - **Syntax highlighting**: full tree-sitter grammar coverage for Rust files.
 
+## Installation
+
+To install `language-rust` search for _language-rust_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-rust`.
+
 ## Services
 
 - **hyperlink.injection** (`^1.0.0`): consumed to highlight URLs inside Rust files as clickable links.
