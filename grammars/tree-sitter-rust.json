@@ -1,7 +1,7 @@
 {
   "name": "Rust",
   "scopeName": "source.rust",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-rust",
   "injectionRegex": "^(rust|RUST)$",
   "fileTypes": ["rs"],
