@@ -13,7 +13,7 @@
   "repository": "https://github.com/lumine-code/language-rust",
   "license": "MIT",
   "engines": {
-    "lumine": "*",
+    "lumine": "^1.0.0",
     "node": ">=12"
   },
   "consumedServices": {
