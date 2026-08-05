@@ -3,6 +3,12 @@
   "author": "lumine-code",
   "version": "1.0.0",
   "main": "lib/main.js",
+  "files": [
+    "grammars",
+    "lib",
+    "settings",
+    "spec"
+  ],
   "description": "Rust language support.",
   "keywords": [
     "rs",
