@@ -2,7 +2,7 @@ const path = require("path");
 
 describe("WASM Tree-sitter Rust grammar", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-rust");
+    await lumine.packages.activatePackage("language-rust");
   });
 
   it("passes grammar tests", async () => {
