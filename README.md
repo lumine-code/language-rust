@@ -9,12 +9,12 @@ Rust language support.
 
 ## Installation
 
-To install `language-rust` search for _language-rust_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-rust`.
+To install `language-rust` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-rust`.
 
 ## Services
 
-- **hyperlink.injection** (`^1.0.0`): consumed to highlight URLs inside Rust files as clickable links.
-- **todo.injection** (`^1.0.0`): consumed to highlight `TODO`-style markers inside comments.
+- `hyperlink.injection`: consumed to highlight URLs inside Rust files as clickable links.
+- `todo.injection`: consumed to highlight `TODO`-style markers inside comments.
 
 ## Contributing
 
