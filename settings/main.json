@@ -1,6 +1,9 @@
 {
   ".source.rust": {
-    "language": {
+    "bracket-matcher": {
+      "autocompleteCharacters": ["()", "[]", "{}", "<>", "\"\"", "``"]
+    },
+    "editor": {
       "commentStart": "// ",
       "commentDelimiters": {
         "line": "//",
@@ -11,9 +14,6 @@
       "tabLength": 4,
       "softTabs": true,
       "preferredLineLength": 99
-    },
-    "bracket-matcher": {
-      "autocompleteCharacters": ["()", "[]", "{}", "<>", "\"\"", "``"]
     }
   }
 }
