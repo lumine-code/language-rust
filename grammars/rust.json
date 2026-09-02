@@ -10,7 +10,7 @@
   },
   "treeSitter": {
     "parserSource": "github:tree-sitter/tree-sitter-rust#v0.24.2",
-    "wasmBuildTool": "tree-sitter-cli#v0.26.13",
+    "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "rust.wasm",
     "highlightsQuery": "rust-highlights.scm",
     "tagsQuery": "rust-tags.scm",
