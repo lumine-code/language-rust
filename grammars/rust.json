@@ -1,0 +1,20 @@
+{
+  "name": "Rust",
+  "scopeName": "source.rust",
+  "type": "tree-sitter",
+  "parser": "tree-sitter-rust",
+  "injectionNames": ["rust"],
+  "fileTypes": ["rs"],
+  "comments": {
+    "start": "// "
+  },
+  "treeSitter": {
+    "parserSource": "github:tree-sitter/tree-sitter-rust#v0.24.2",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.13",
+    "grammar": "rust.wasm",
+    "highlightsQuery": "rust-highlights.scm",
+    "tagsQuery": "rust-tags.scm",
+    "foldsQuery": "rust-folds.scm",
+    "indentsQuery": "rust-indents.scm"
+  }
+}
