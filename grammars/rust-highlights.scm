@@ -1,7 +1,8 @@
 ; COMMENTS
 ; ========
 
-(line_comment) @comment.line.double-slash.rust
+((line_comment) @comment.line.double-slash.rust
+  (#set! adjust.endBeforeFirstMatchOf "\\r?$"))
 ((line_comment) @punctuation.definition.comment.rust
   (#set! adjust.endAfterFirstMatchOf "^//"))
 
@@ -98,9 +99,9 @@
 ; VARIABLES
 ; =========
 
-(parameters
-  (parameter
-    pattern: (_) @variable.parameter.function.rust))
+(parameter
+  pattern: (_) @variable.parameter.function.rust
+  (#is? test.typeAt "parent.parent parameters"))
 
 (let_declaration
   pattern: (_) @variable.other.assignment.rust)
@@ -132,8 +133,8 @@
 ; KEYWORDS
 ; ========
 
-(use_list (self) @keyword.control.rust)
-(scoped_use_list (self) @keyword.control.rust)
+((self) @keyword.control.rust
+  (#is? test.childOfType "use_list scoped_use_list"))
 (scoped_identifier (self) @keyword.control.rust)
 
 
