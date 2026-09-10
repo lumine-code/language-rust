@@ -52,7 +52,7 @@ describe("Rust Tree-sitter highlights", () => {
       ),
     ).toBe(true);
 
-    const query = fs.readFileSync(HIGHLIGHTS_PATH, "utf8");
+    const query = fs.readFileSync(HIGHLIGHTS_PATH, "utf8").replaceAll("\r\n", "\n");
     expect(query).toContain(
       '(parameter\n  pattern: (_) @variable.parameter.function.rust\n  (#is? test.typeAt "parent.parent parameters"))',
     );
