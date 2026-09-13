@@ -3,7 +3,7 @@
   "scopeName": "source.rust",
   "type": "tree-sitter",
   "parser": "tree-sitter-rust",
-  "injectionNames": ["rust"],
+  "injectionNames": ["rust", "rs"],
   "fileTypes": ["rs"],
   "comments": {
     "start": "// "
