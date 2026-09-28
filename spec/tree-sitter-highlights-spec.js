@@ -19,12 +19,12 @@ describe("Rust Tree-sitter highlights", () => {
     await editor.getBuffer().languageMode.ready;
   }
 
-  function rawCaptures(startRow, endRow) {
-    const layer = editor.getBuffer().languageMode.rootLanguageLayer;
-    return layer.queries.highlightsQuery.captures(layer.tree.rootNode, {
+  async function rawCaptures(startRow, endRow) {
+    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
+    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   it("keeps a large parameter list locally rooted and tile captures local", async () => {
@@ -39,7 +39,7 @@ describe("Rust Tree-sitter highlights", () => {
       "variable.parameter.function.rust",
     );
 
-    const captures = rawCaptures(3000, 3006);
+    const captures = await rawCaptures(3000, 3006);
     const parameters = captures.filter(
       (capture) => capture.name === "variable.parameter.function.rust",
     );
@@ -71,7 +71,7 @@ describe("Rust Tree-sitter highlights", () => {
       "keyword.control.rust",
     );
 
-    const captures = rawCaptures(3000, 3006);
+    const captures = await rawCaptures(3000, 3006);
     expect(captures.length).toBeLessThanOrEqual(24);
     expect(
       captures.every(
