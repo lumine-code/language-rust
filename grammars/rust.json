@@ -15,6 +15,7 @@
     "highlightsQuery": "rust-highlights.scm",
     "tagsQuery": "rust-tags.scm",
     "foldsQuery": "rust-folds.scm",
-    "indentsQuery": "rust-indents.scm"
+    "indentsQuery": "rust-indents.scm",
+    "injectionsQuery": "rust-injections.scm"
   }
 }

@@ -20,11 +20,12 @@ describe("Rust Tree-sitter highlights", () => {
   }
 
   async function rawCaptures(startRow, endRow) {
-    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
+    const query = await editor.getGrammar().getQuery("highlightsQuery");
+    const root = editor.getBuffer().getLanguageMode().rootLanguageLayer.tree.rootNode;
+    return query.captures(root, {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
-    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   it("keeps a large parameter list locally rooted and tile captures local", async () => {
