@@ -2,6 +2,8 @@
 
 Rust language support.
 
+Fork of [pulsar-edit/pulsar](https://github.com/pulsar-edit/pulsar) (`packages/language-rust-bundled`).
+
 ## Features
 
 - **Grammars**: provides Tree-sitter grammars built from [tree-sitter-rust](https://github.com/tree-sitter/tree-sitter-rust).
