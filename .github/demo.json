@@ -1,0 +1,16 @@
+{
+  "title": "language-rust",
+  "description": "Rust syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "4cb602645fdc0dcc8eb9eeb39ee231727a0a65be",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "Rust syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 560
+    }
+  ]
+}

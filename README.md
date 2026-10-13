@@ -9,6 +9,8 @@ Fork of [pulsar-edit/pulsar](https://github.com/pulsar-edit/pulsar) (`packages/l
 - **Grammars**: provides Tree-sitter grammars built from [tree-sitter-rust](https://github.com/tree-sitter/tree-sitter-rust).
 - **Syntax highlighting**: full tree-sitter grammar coverage for Rust files.
 
+![Rust syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-rust` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-rust`.
