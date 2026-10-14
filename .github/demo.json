@@ -1,16 +1,61 @@
 {
   "title": "language-rust",
-  "description": "Rust syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "4cb602645fdc0dcc8eb9eeb39ee231727a0a65be",
+  "description": "Rust syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "8e9be116956c84c7b838c108ccc605b4bfb5f4d6",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "724f911ed3b1bfc77525d77e99f7e777cb2f09241bbebda7663984054550f8c7",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 560 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "0362a9fac7d6e153a768c0381800d6f3eb06647a",
+      "dirty": true,
+      "workingTreeHash": "1d75658a8b7d55a69c806a3786c562863bb9d5c71cbf96b3084c6a78c0d648b4"
+    },
+    "package": {
+      "revision": "8e9be116956c84c7b838c108ccc605b4bfb5f4d6",
+      "dirty": true,
+      "workingTreeHash": "2fdedf9d5ef780024d3b6ced9ad4f50fb2b64f559377c5d570136bcd721c8184"
+    },
+    "language-rust": {
+      "revision": "8e9be116956c84c7b838c108ccc605b4bfb5f4d6",
+      "dirty": true,
+      "workingTreeHash": "2fdedf9d5ef780024d3b6ced9ad4f50fb2b64f559377c5d570136bcd721c8184"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.rs",
+      "sha256": "84cfcdff2241ee2c6e9d0b45e350ecffb6f567e2e88c6e93930534ab79cba57a"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "Rust syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 560
+      "height": 560,
+      "sha256": "d34f2270801c3a141be013f9793488818ede5112a98af6247b8ae87ac1d9e2cd"
     }
   ]
 }
