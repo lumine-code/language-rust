@@ -5,7 +5,8 @@
   "files": [
     "grammars",
     "settings",
-    "spec"
+    "spec",
+    "THIRD_PARTY_NOTICES"
   ],
   "description": "Rust language support.",
   "keywords": [
