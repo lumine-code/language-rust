@@ -1,7 +1,8 @@
 {
   ".source.rust": {
     "bracket-matcher": {
-      "autocompleteCharacters": ["()", "[]", "{}", "<>", "\"\"", "``"]
+      "autocompleteCharacters": ["()", "[]", "{}", "<>", "\"\""],
+      "autocompleteDisabledCharacters": ["<"]
     },
     "editor": {
       "commentStart": "// ",
