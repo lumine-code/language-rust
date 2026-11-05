@@ -11,8 +11,7 @@
         "block": ["/*", "*/"]
       },
       "tabLength": 4,
-      "softTabs": true,
-      "preferredLineLength": 99
+      "softTabs": true
     }
   }
 }
