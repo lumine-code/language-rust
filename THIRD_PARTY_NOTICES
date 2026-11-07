@@ -33,6 +33,9 @@ SOFTWARE.
 Source: https://github.com/tree-sitter/tree-sitter-rust
 Revision: v0.24.2
 
+Parser source: github:tree-sitter/tree-sitter-rust#v0.24.2
+Resolved commit: 77a3747266f4d621d0757825e6b11edcbf991ca5
+
 Original file: LICENSE
 
 The MIT License (MIT)
